@@ -1,0 +1,99 @@
+@import "src/index"
+.body
+  background: url("./../../../public/assets/discussBack.png")
+  background-size: 100% 100%
+  width: 100%
+  height: 56.25vw
+  display: flex
+  justify-content: center
+  align-items: center
+
+.marseroImg
+  position: absolute
+  left: 5.208vw
+  top: 2.6vw
+  width: 11.35vw
+  height: 1.19vw
+  user-select: none
+
+
+.officialText
+  position: absolute
+  top: 2.81vw
+  right: 5.208vw
+  @include text(0.572vw, white)
+  user-select: none
+
+
+.backBtn
+  width: 3.64vw
+  height: 3.64vw
+  position: absolute
+  top: 26.3vw
+  left: 5.208vw
+  background: url("/assets/backButton.svg") no-repeat
+  background-size: 100% 100%
+
+
+.callBox
+  border: rgba(0, 255, 10, 0.2) 1px solid
+  background: black
+  padding: 1.66vw 1.04vw 1.04vw 1.04vw
+  border-radius: 1.04vw
+
+
+.callBody
+  display: flex
+  flex-direction: column
+
+
+.title
+  @include text(1.875vw, white)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 4.01vw
+  user-select: none
+
+
+.littleTitle
+  @include text(0.9375vw, white)
+  margin-top: 1.04vw
+  margin-bottom: 1.56vw
+  display: flex
+  align-items: center
+  justify-content: center
+  user-select: none
+
+.green
+  color: $main-green-color
+
+.input
+  width: 23.48vw
+  height: 2.08vw
+  padding: 0.78vw 1.04vw
+  border-radius: 5.208vw
+  background: rgba(26, 26, 26, 1)
+  border: none
+  outline: none
+  margin-bottom: 1.04vw
+  @include text(0.9375vw, rgba(157, 157, 157, 1))
+  user-select: none
+
+
+
+.send
+  background: transparent
+  outline: none
+  border: 1px $main-green-color solid
+  border-radius: 5.208vw
+  @include text(0.9375vw, $main-green-color)
+  height: 3.5vw
+  transition: background-color ease 0.25s, color ease 0.25s, font-weight 0.01s ease 0.124s
+  user-select: none
+  &:hover
+    background: $main-green-color
+    color: black
+    font-weight: 400
+

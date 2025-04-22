@@ -1,0 +1,86 @@
+@import "src/index"
+.callBody
+  height: 227.77vw
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+.header
+  margin-top: 16vw
+  display: flex
+  width: 88.88vw
+  justify-content: space-between
+  align-items: center
+
+.marseroImg
+  width: 33.333vw
+  height: 3.6111vw
+  display: block
+
+.closeBtn
+  display: block
+  width: 6.944vw
+  height: 6.944vw
+  outline: none
+  border: none
+  background: transparent
+  position: relative
+  & div
+    position: absolute
+    width: 8vw
+    height: 2px
+    background: rgba(0, 255, 10, 1)
+    &:nth-child(1)
+      transform: rotateZ(45deg)
+    &:nth-child(2)
+      transform: rotateZ(-45deg)
+
+
+.callBlock
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  align-items: center
+
+
+.callBigTitle
+  @include text(10vw, rgba(255, 255, 255, 1))
+  text-align: center
+  margin-bottom: 5.555vw
+  margin-top: 19.166vw
+
+.spanBlock
+  @include text(3.61vw, rgba(176, 176, 176, 1))
+  line-height: 5.05vw
+  margin-bottom: 8.333vw
+  text-align: center
+
+.green
+  color: rgba(0, 255, 10, 1)
+
+.formBox
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+.input
+  border-radius: 27.777vw
+  padding: 4.1666vw 5.5555vw
+  width: 77.77vw
+  height: 4.16666vw
+  @include text(3.888vw, rgba(157, 157, 157, 1))
+  background: rgba(26, 26, 26, 1)
+  outline: none
+  border: none
+  margin-bottom: 4.1666vw
+
+.sendBtn
+  width: 88.88vw
+  height: 12.5vw
+  @include text(3.888vw, rgba(0, 255, 10, 1))
+  border-radius: 27.777vw
+  background: rgba(0, 0, 0, 1)
+  border: 1px solid rgba(0, 255, 10, 1)

@@ -1,0 +1,198 @@
+@import "src/index"
+.categoriesBody
+  margin: 0 5.208vw
+  display: flex
+  flex-direction: column
+
+.categoryTopBody
+  display: flex
+  flex-direction: row
+  margin-bottom: 60px
+  & div
+    flex: 1
+    width: 100%
+
+
+.categoryBottomBody
+  display: flex
+  & div
+    flex: 1
+
+
+.categoriesLittleTitle
+  @include text(0.9375vw, rgba(255, 255, 255, 1))
+  user-select: none
+
+
+.categoriesBigTitle
+  @include text(3.64vw, rgba(255, 255, 255, 1))
+  line-height: 3.46vw
+  user-select: none
+
+
+@mixin categoryButtonTemplate($color)
+  @include text(0.9375vw, $color)
+  height: 3.125vw
+  border-radius: 5.208vw
+  border: solid 1px $color
+  background-color: #000000
+  transition: all ease 0.25s
+  text-align: center
+  user-select: none
+
+.categoryButton
+  @include categoryButtonTemplate(rgba(176, 176, 176, 1))
+  &:hover
+    color: $main-green-color
+    border-color: $main-green-color
+
+
+.categoryButtonChosen
+  @include categoryButtonTemplate($main-green-color)
+
+
+.categoryBlockTitle
+  @include text(2.86vw, rgba(255, 255, 255, 1))
+  line-height: 3.15vw
+  user-select: none
+  margin-top: 2.6vw
+
+
+.categoryBlockText
+  @include text(0.9375vw, rgba(176, 176, 176, 1))
+  line-height: 1.31vw
+  user-select: none
+  margin-top: 1.5625vw
+
+
+.categoryBlockId
+  @include text(1.04vw, rgba(255, 255, 255, 1))
+  line-height: 1.14vw
+  user-select: none
+
+
+.categoryBlock
+  position: relative
+  margin-top: 3.64vw
+  & .webDesignTextStyle
+    & .categoryBlockText
+      width: 18.43vw
+    &:nth-child(2) .categoryBlockText
+      width: 19.5vw
+    &:nth-child(3) .categoryBlockText
+      width: 22vw
+  & .workingTextStyle
+    &:nth-child(2)
+      & .categoryBlockTitle
+        width: 35.2vw
+    &:nth-child(3)
+      & .categoryBlockText
+        display: flex
+        flex-direction: column
+        margin-top: 1vw
+        & span
+          display: flex
+          align-items: center
+          &::before
+            content: ' '
+            background: rgba(176, 176, 176, 1)
+            width: 0.156vw
+            height: 0.156vw
+            border-radius: 0.156vw
+            margin-right: 0.781vw
+    &:nth-child(4)
+      & .categoryBlockTitle
+        width: 29.375vw
+      & .categoryBlockText
+        width: 20.83vw
+    &:nth-child(5)
+      & .categoryBlockText
+        width: 30vw
+
+
+
+
+.categoryContent
+  position: absolute
+  transition: all ease 0.5s
+  height: 100%
+  display: flex
+  flex-direction: column
+
+
+.categoryRightBottom
+  display: flex
+  flex-direction: column
+
+
+.buttonsBox
+  display: grid
+  width: 100%
+  grid-template-rows: repeat(2, 1fr)
+  grid-template-columns: 14.32vw 15.41vw 11.92vw
+  grid-column-gap: 1.5625vw
+  grid-row-gap: 0.78125vw
+
+
+.categoryImg
+  position: absolute
+  transition: all 0.5s ease
+  opacity: 0
+  width: 39.58vw
+  height: 21.77vw
+  user-select: none
+
+.categoryImgWorkingPage
+  position: absolute
+  transition: all 0.5s ease
+  opacity: 0
+  width: 39.58vw
+  height: 24.58vw
+  user-select: none
+
+
+.buttonsBoxWorkingPage
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  & button
+    &:nth-child(1)
+      width: 14.63vw
+      margin-bottom: 0.78125vw
+    &:nth-child(2)
+      width: 17.6vw
+    &:nth-child(3)
+      width: 9.375vw
+    &:nth-child(4)
+      width: 21.92vw
+    &:nth-child(5)
+      width: 21.3vw
+
+
+
+@media (max-width: 560px)
+  .categoryButton
+    @include text(3.888vw, rgba(176, 176, 176, 1))
+    text-align: center
+    height: 12.5vw
+    border-radius: 27.777vw
+    width: auto
+    border: solid 1px rgba(176, 176, 176, 1)
+    background-color: #000000
+    transition: all ease 0.25s
+    padding: 0
+    margin: 0
+    &:hover
+      color: rgba(176, 176, 176, 1)
+      border-color: rgba(176, 176, 176, 1)
+  .categoryButtonChosen
+    padding: 0
+    margin: 0
+    @include text(3.888vw, $main-green-color)
+    text-align: center
+    height: 12.5vw
+    border-radius: 27.777vw
+    width: auto
+    border: solid 1px $main-green-color
+    background-color: #000000
+    transition: all ease 0.25s

@@ -1,0 +1,56 @@
+@import "src/index"
+
+.workingScreenBody
+  width: 100%
+  height: 227.77vw
+  background: url("/assets/webDesignMobile.png") no-repeat
+  background-position-y: 55.55vw
+  background-size: 100% 108.33vw
+
+
+.titleBox
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.titleWhite
+  @include text(13.333vw, white)
+  line-height: 14.9333vw
+  user-select: none
+
+.littleText
+  @include text(3.888vw, rgba(255, 255, 255, 1))
+  line-height: 5.444vw
+  text-align: center
+  margin-top: 5.555vw
+  margin-bottom: 80.27vw
+  user-select: none
+
+
+.discussBtnBox
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.headerBox
+  padding-top: 17.5vw
+  margin-bottom: 20.20vw
+
+.dots
+  margin: 0 5.555vw 7.5vw 5.555vw
+  & span
+    width: 100%
+    display: inline
+    @include text(3.611vw, rgba(179, 179, 179, 1))
+    user-select: none
+    &:not(&:last-child)
+      margin-right: 8.05vw
+    &:before
+      max-width: 0.8333vw
+      max-height: 0.8333vw
+      content: url("/assets/grayCirle.svg")
+      margin-right: 1.5vw
+      transform: translateY(-0.6vw)

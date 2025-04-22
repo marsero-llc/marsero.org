@@ -1,0 +1,74 @@
+@import "src/index"
+.techBody
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+
+.techTitle
+  @include text(3.645vw, rgba(255, 255, 255, 1))
+  margin-bottom: 1.5625vw
+  user-select: none
+  text-align: center
+
+
+.techContent
+  margin: 0 5.208vw
+  display: grid
+  grid-template-rows: repeat(3, 1fr)
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: 1.5625vw
+  & div
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+      user-select: none
+      width: 16.66vw
+      height: 7.812vw
+
+
+
+
+
+@media (max-width: 560px)
+  .techBody
+    height: 250vw
+    justify-content: normal
+    background: url("/assets/tech/techMobileBack.png")
+    background-size: 100% 100%
+  .techTitle
+    margin-top: 55.55vw
+    margin-bottom: 10vw
+    font-size: 8.333vw
+    line-height: 7.916vw
+    text-align: center
+  .techContent
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(7, 1fr)
+    margin: 0 5.55vw
+    grid-template-areas: 'a b' 'c d' 'e f' 'g h' 'i j' 'k l' 'm n'
+    grid-column-gap: 2.22vw
+    grid-row-gap: 0
+    & div
+      width: 43.33vw
+      display: flex
+      justify-content: center
+      align-items: center
+      & img
+        width: 43.33vw
+        height: 20.55vw
+      &:nth-child(5)
+        grid-area: f
+      &:nth-child(7)
+        grid-area: h
+      &:nth-child(10)
+        grid-area: g
+      &:nth-child(12)
+        grid-area: j
+      &:nth-child(13)
+        grid-area: n
+
+

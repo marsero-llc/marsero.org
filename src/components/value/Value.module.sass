@@ -1,0 +1,99 @@
+@import "src/index"
+.valueBody
+  position: relative
+  height: 31.56vw
+  width: 77.18vw
+  margin: 0 5.208vw
+  & span
+    user-select: none
+    &:nth-child(1)
+      left: 0
+      top: 0
+    &:nth-child(2)
+      left: 44.42vw
+    &:nth-child(3)
+      left: 44.42vw
+      top: 3.645vw
+    &:nth-child(4)
+      left: 44.42vw
+      top: 13.229vw
+    &:nth-child(5)
+      left: 44.42vw
+      top: 16.875vw
+    &:nth-child(6)
+      left: 44.42vw
+      top: 25vw
+    &:nth-child(7)
+      left: 44.42vw
+      bottom: 0
+    &:nth-child(8)
+      top: 25vw
+      left: 0
+    &:nth-child(9)
+      width: 32.39vw
+      bottom: 0
+      left: 0
+
+
+
+.littleText
+  position: absolute
+  @include text(1.041vw, rgba(176, 176, 176, 1))
+
+
+
+.bigText
+  position: absolute
+  @include text(2.1875vw, rgba(255, 255, 255, 1))
+
+
+.title
+  @include text(0.9375vw, rgba(255, 255, 255, 1))
+
+
+.firstLine
+  position: absolute
+  width: 24.79vw
+  height: 2px
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3))
+  bottom: 5.468vw
+  left: 17.44vw
+  opacity: 50%
+
+
+.secondLine
+  position: absolute
+  width: 2px
+  height: 25vw
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3))
+  bottom: 5.468vw
+  left: 42.23vw
+  opacity: 50%
+
+.firstDot, .secondDot, .thirdDot, .fourthDot
+  width: 0.3125vw
+  height: 0.3125vw
+  background: rgba(217, 217, 217, 1)
+  border-radius: 0.15625vw
+
+.firstDot
+  position: absolute
+  bottom: 5.364vw
+  left: 17.34375vw
+
+
+.secondDot
+  position: absolute
+  bottom: 5.364vw
+  left: 42.083vw
+
+.thirdDot
+  position: absolute
+  top: 14.11vw
+  left: 42.083vw
+  
+  
+.fourthDot
+  position: absolute
+  top: 0.885vw
+  left: 42.083vw

@@ -1,0 +1,63 @@
+@import "src/index"
+
+.workingScreenBody
+  width: 100%
+  height: 176.94vw
+  background: url("/assets/workingMobileBack.png") no-repeat
+  background-position-y: 60.833vw
+  background-size: 100% 108.33vw
+
+
+.titleBox
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.titleGreen
+  @include text(13.333vw, $main-green-color)
+  line-height: 14.9333vw
+  user-select: none
+
+
+.titleWhite
+  @include text(13.333vw, white)
+  line-height: 14.9333vw
+  user-select: none
+
+.littleText
+  @include text(3.888vw, rgba(255, 255, 255, 1))
+  line-height: 5.444vw
+  text-align: center
+  margin-top: 3.05vw
+  margin-bottom: 61.11vw
+  user-select: none
+
+
+.discussBtnBox
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.headerBox
+  padding-top: 17.5vw
+  margin-bottom: 25.833vw
+
+.dots
+  margin: 0 5.555vw 8.333vw 5.555vw
+  display: flex
+  & span
+    width: 100%
+    display: flex
+    @include text(3.611vw, rgba(179, 179, 179, 1))
+    user-select: none
+    &:not(&:last-child)
+      margin-right: 12.777vw
+    &:before
+      max-width: 0.8333vw
+      max-height: 0.8333vw
+      content: url("/assets/grayCirle.svg")
+      margin-right: 2.777vw
+      transform: translateY(-0.6vw)

@@ -1,0 +1,69 @@
+@import "../../index"
+.mainBody
+  width: 100%
+  height: 56.25vw
+  background-size: 100% 100%
+
+.titleBox
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+
+.title
+  margin-top: 6.8725vw
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+.titleGreen
+  color: $main-green-color
+  font-family: 'Muller'
+  filter: brightness(80%)
+  font-size: 13.02vw
+  line-height: 12.369vw
+  font-weight: 300
+  text-align: center
+  margin-bottom: -2vw
+  user-select: none
+
+
+.titleWhite
+  font:
+    size: 6.25vw
+    family: Muller
+    weight: 200
+  color: white
+  line-height: 5.9375vw
+  user-select: none
+
+
+
+.dotsList
+  margin-top: 3.645vw
+  list-style: none
+  padding: 0
+  display: flex
+  width: 100%
+  justify-content: center
+  & li
+    user-select: none
+    display: flex
+    &:not(&:first-child)
+      margin-left: 2.1875vw
+    @include text(0.9375vw, white)
+    &:before
+      margin-right: 1.04vw
+      transform: translateY(0.31275vw)
+      display: inline-block
+      width: 0.3125vw
+      height: 0.3125vw
+      background: $main-green-color
+      content: ''
+      border-radius: 0.156vw
+
+

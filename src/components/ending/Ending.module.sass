@@ -1,0 +1,138 @@
+@import "src/index"
+.endingBody
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+
+.endingContent
+  height: 45.46875vw
+  width: 100%
+
+.back
+  width: 100%
+  position: absolute
+  height: 45.46875vw
+  & span
+    user-select: none
+    @include text(0.9375vw, rgba(171, 171, 171, 1))
+  & div
+    position: absolute
+
+
+.firstLine
+  width: 2px
+  height: 100%
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+  right: 50%
+  opacity: 50%
+
+
+
+.secondLine
+  height: 2px
+  width: 50%
+  background: linear-gradient(-90deg ,rgba(167, 167, 167, 1), rgba(167, 167, 167, 1), rgba(255, 255, 255, 0))
+  top: 14.42vw
+  opacity: 50%
+
+
+.thirdLine
+  height: 2px
+  width: 50%
+  background: linear-gradient(90deg ,rgba(167, 167, 167, 1), rgba(167, 167, 167, 1), rgba(255, 255, 255, 0))
+  top: 32vw
+  left: 50%
+  opacity: 50%
+
+
+.firstDot, .secondDot
+  width: 0.3125vw
+  height: 0.3125vw
+  border-radius: 0.15625vw
+  background-color: rgba(217, 217, 217, 1)
+  left: 0
+  right: 0
+  margin: 0 auto
+
+
+.firstDot
+  top: 14.27vw
+
+.secondDot
+  top: 31.85vw
+
+.firstSpan
+  top: 13.125vw
+  right: 50.46vw
+  position: absolute
+
+
+.secondSpan
+  top: 30.72vw
+  left: 50.46vw
+  position: absolute
+
+
+.titleBox
+  margin: 0 5.208vw
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  height: 100%
+
+
+.titleText
+  @include text(4.16vw, rgba(255, 255, 255, 1))
+  line-height: 4.5833vw
+  user-select: none
+
+.titleTextAboutPage
+  @include text(3.2vw, rgba(255, 255, 255, 1))
+  line-height: 3.895vw
+  user-select: none
+
+.titleGreen
+  color: $main-green-color
+
+
+
+@media (max-width: 560px)
+  .titleText
+    font-size: 12.5vw
+    line-height: 13.75vw
+    text-wrap: normal
+    text-align: center
+  .titleTextAboutPage
+    @include text(8.05vw, rgba(255, 255, 255, 1))
+    line-height: 8.86vw
+    user-select: none
+    text-align: center
+  .back span
+    font-size: 3.333vw
+  .secondDot, .firstDot
+    width: 1.666vw
+    height: 1.666vw
+    border-radius: 0.8333vw
+  .secondLine
+    top: 42.777vw
+  .thirdLine
+    top: 123.22vw
+  .firstDot
+    top: 41.944vw
+  .secondDot
+    top: 122.5vw
+  .firstSpan
+    top: 37.5vw
+    right: 51.66vw
+  .secondSpan
+    left: 51.66vw
+    top: 118vw
+  .endingContent
+    height: 164.72vw
+  .titleBox
+    margin: 0
+  .back
+    height: 164.72vw

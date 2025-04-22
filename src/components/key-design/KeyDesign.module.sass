@@ -1,0 +1,114 @@
+@import "src/index"
+.keyDesignBody
+  display: flex
+  flex-direction: column
+  margin: 0 5.208vw
+
+
+.keyDesignTitleBody
+  display: flex
+  flex-direction: row
+  width: 100%
+
+
+.keyDesignLittleTitle
+  @include text(0.9375vw, white)
+  flex: 1
+  user-select: none
+
+
+.keyDesignBigTitle
+  @include text(3.645vw, white)
+  flex: 1
+  user-select: none
+
+
+.topImagesBox
+  display: flex
+  flex-direction: row
+  margin-top: 3.95vw
+  & div
+    flex: 1
+    &:not(&:first-child)
+      margin-left: 0.729vw
+    & img
+      user-select: none
+      width: 100%
+      height: 100%
+
+
+.topImagesBoxBranding
+  display: flex
+  margin-top: 1.82vw
+  & div
+    & img
+      width: 100%
+      user-select: none
+    &:not(&:first-child)
+      flex: 2
+      margin-left: 0.729vw
+    &:first-child
+      flex: 1
+
+
+.keyDesignTextBlock
+  display: flex
+  width: 100%
+  margin-bottom: 3.95vw
+  & div
+    width: 100%
+    flex: 1
+
+
+.keyDesignTextDesignPage
+  flex: 1
+  display: flex
+  flex-direction: column
+  margin-top: 2.6vw
+  & span
+    @include text(0.9375vw, white)
+    line-height: 1.3125vw
+    user-select: none
+
+
+.keyDesignTextMainPage
+  flex: 1
+  display: flex
+  flex-direction: column
+  margin-top: 17.6vw
+  & span
+    user-select: none
+    @include text(3.64vw, white)
+
+
+.brandingText
+  @include text(0.9375vw, rgba(255, 255, 255, 1))
+  margin-top: 17.6vw
+  user-select: none
+
+
+
+.keyDesignBottomPhotos
+  display: flex
+  & div
+    & img
+      user-select: none
+      width: 100%
+    &:nth-child(1)
+      margin-right: 0.729vw
+      flex: 2 auto
+    &:nth-child(2)
+      display: flex
+      flex-direction: column
+      flex: 1 auto
+      & img
+        height: 100%
+        flex: 1
+      & div
+        flex: 0.5
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: center
+        & button
+          width: 100%
