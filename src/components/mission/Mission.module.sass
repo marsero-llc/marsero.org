@@ -1,0 +1,50 @@
+@import "src/index"
+.missionBody
+  margin: 0 5.208vw 7.55vw 5.208vw
+  display: flex
+  & div
+    flex: 1
+    width: 100%
+
+.littleTitle
+  @include text(0.9375vw, rgba(255, 255, 255, 1))
+  user-select: none
+
+
+.text
+  @include text(1.5625vw, rgba(255, 255, 255, 1))
+  line-height: 2.1875vw
+  user-select: none
+
+
+.green
+  color: $main-green-color
+
+
+@media (max-width: 560px)
+  .missionBody
+    height: 154.4vw
+    margin: 0
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: url("/assets/mission/missionMobileBack.png")
+    background-size: 100% 100%
+    & div
+      flex: 0
+  .text
+    @include text(3.888vw, rgba(176, 176, 176, 1))
+    line-height: 5.444vw
+    text-align: center
+    user-select: none
+    & span
+      margin: 0 5.555vw
+      display: block
+  .littleTitle
+    @include text(10.555vw, rgba(255, 255, 255, 1))
+    margin-bottom: 5.555vw
+    text-align: center
+    user-select: none
+  .green
+    color: rgba(176, 176, 176, 1)
+    user-select: none

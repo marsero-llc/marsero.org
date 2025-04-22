@@ -1,0 +1,59 @@
+.load
+  width: 100%
+
+
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30vw
+  position: absolute
+  margin: auto
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+.svg
+  width: 100%
+
+.m
+  fill: none
+  stroke: white
+  stroke-width: 10
+  stroke-dasharray: 273.137085
+  animation: M ease infinite 3s
+
+@mixin circleTemplate
+  fill: none
+  stroke-width: 7
+  stroke: rgba(0, 255, 10, 1)
+
+.circle
+  @include circleTemplate
+  stroke-dasharray: 324
+  stroke-dashoffset: -210
+  animation: forwards infinite linear 1.5s dash
+
+.circle2
+  @include circleTemplate
+  stroke-dasharray: 377
+  stroke-dashoffset: 130
+  animation: 1.5s linear infinite dash2
+
+@keyframes dash
+  100%
+    stroke-dashoffset: -838
+
+@keyframes dash2
+  100%
+    stroke-dashoffset: 884
+
+@keyframes M
+  100%
+    stroke-dashoffset: -546.2717
+
+
+@media (max-width: 560px)
+  .container
+    width: 50vw

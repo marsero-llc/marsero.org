@@ -1,0 +1,131 @@
+@import "src/index"
+.advantagesBody
+  display: flex
+  flex-direction: column
+  margin: 0 5.208vw
+
+
+.advantagesTitleBox
+  display: flex
+  flex-direction: row
+  & div
+    flex: 1
+
+
+.advantagesBigTitle
+  @include text(3.64vw, white)
+  line-height: 4.01vw
+  margin-bottom: 1.04vw
+  user-select: none
+
+
+.advantagesLittleTitle
+  @include text(0.9375vw, #B0B0B0)
+  user-select: none
+
+.green
+  color: $main-green-color
+
+
+.advantagesTitleContent
+  display: flex
+  flex-direction: column
+
+
+
+
+.advantageBlock
+  background: linear-gradient(rgba(47, 47, 47, 0.2), rgba(91, 91, 91, 0.2))
+  border: 1px rgba(47, 47, 47, 1) solid
+  display: flex
+  justify-content: start
+  width: 21.56vw
+  height: 21.56vw
+  border-radius: 0.989vw
+  transition: 0.25s ease all
+  &:hover
+    & div img
+      &:nth-child(1)
+        opacity: 0
+      &:nth-child(2)
+        opacity: 1
+  & div img
+      &:nth-child(2)
+        opacity: 0
+      transition: 0.25s ease
+      position: absolute
+      user-select: none
+
+
+
+
+.advantageBlockText
+  @include text(1.5625vw, white)
+  line-height: 1.71vw
+  user-select: none
+
+.advantageText
+  @include text(1.04vw, rgba(176, 176, 176, 1))
+  user-select: none
+
+.advantagesBox
+  margin-top: 2.6vw
+  display: grid
+  width: 100%
+  grid-row-gap: 1.5625vw
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  grid-template-areas: 'a b c d' 'e f g h'
+
+
+@mixin imageStyle($area, $direction, $padding, $height, $img-width, $text-width )
+  grid-area: $area
+  flex-direction: $direction
+  & div
+    height: $height
+    width: $img-width
+    margin-left: 21.56vw - $img-width
+    & img
+      width: $img-width
+      height: $height
+  & span
+    padding: $padding
+    width: $text-width
+
+
+.mainPageStyle
+  & div
+    &:nth-child(1)
+      @include imageStyle(a, column, 1.45vw 0 1.19vw 1.458vw, 15.41vw, 13.07vw, 16.82vw)
+    &:nth-child(2)
+      @include imageStyle(c, column-reverse, 1.5625vw 0 0 1.5625vw, 16.5vw, 15.1vw,13.33vw)
+      margin-right: 1.5625vw
+    &:nth-child(3)
+      @include imageStyle(d, column-reverse, 1.5625vw 0 0 1.5625vw, 15.7vw, 13.5vw, 18vw)
+    &:nth-child(4)
+      @include imageStyle(e, column, 0 0 1.19vw 1.5625vw, 14.84vw, 17.44vw, 12.5vw)
+      margin-right: 1.5625vw
+    &:nth-child(5)
+      @include imageStyle(f, column-reverse, 1.4vw 0 0 1.3vw, 16.61vw, 13.07vw, 13.2vw)
+    &:nth-child(6)
+      grid-area: h
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+
+
+
+.brandingPageStyle
+  & div
+    &:nth-child(1)
+      @include imageStyle(c, column-reverse, 1.5625vw 0 0 1.5625vw, 16.5vw, 15.1vw,13.33vw)
+      margin-right: 1.5625vw
+    &:nth-child(2)
+      @include imageStyle(d, column-reverse, 1.5625vw 0 0 1.5625vw, 15.7vw, 13.5vw, 18vw)
+    &:nth-child(3)
+      @include imageStyle(e, column, 0 0 1.5625vw 1.5625vw, 15.36vw, 17.44vw, 12vw)
+      margin-right: 1.5625vw
+    &:nth-child(4)
+      @include imageStyle(f, column-reverse, 1.4vw 0 0 1.3vw, 16.61vw, 13.07vw, 13.2vw)
+

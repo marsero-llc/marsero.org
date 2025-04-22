@@ -1,0 +1,159 @@
+@import "src/index"
+.categoriesBody
+  margin: 0
+  padding: 55.5vw 5.555vw 0 5.555vw
+  display: flex
+  height: 305.5vw
+  flex-direction: column
+  background: url("/assets/categories/categoriesMobileBack.png")
+  background-size: 100% 100%
+
+
+.categoryTopBody
+  grid-area: title
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 13.88vw
+  & span
+    text-align: center
+
+
+.categoriesLittleTitle
+  @include text(3.611vw, rgba(255, 255, 255, 1))
+  user-select: none
+  text-align: center
+  line-height: 3.972vw
+  margin-bottom: 13.88vw
+
+
+.categoriesBigTitle
+  @include text(10.555vw, rgba(255, 255, 255, 1))
+  user-select: none
+  line-height: 10vw
+  text-align: center
+
+.categoryBottomBody
+  display: flex
+  flex-direction: row
+  & div
+    width: 100%
+    flex: 1
+
+
+.categoryBlockText
+  @include text(3.888vw, white)
+  line-height: 5.444vw
+  text-align: center
+  user-select: none
+
+
+.categoryBlockId
+  @include text(3.333vw, white)
+
+
+.categoryBlock
+  position: relative
+  min-height: 11.1vw
+  margin-bottom: 5vw
+
+.categoryContent
+  position: absolute
+  display: flex
+  flex-direction: column
+  transition: all ease 0.5s
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 11.1vw
+  & div
+    width: 100%
+    & span
+      text-align: center
+    &:nth-child(1)
+      margin-bottom: 2.777vw
+      grid-area: title
+    &:nth-child(2)
+      grid-area: text
+
+.categoryImg
+  position: absolute
+  transition: all 0.5s ease
+  opacity: 0
+  width: 88.333vw
+  height: 48.88vw
+  user-select: none
+
+.imagesBox
+  height: 48.88vw
+  margin-bottom: 4.16vw
+
+.categoryRightBottom
+  width: 100%
+
+
+
+
+.buttonsBox
+  margin-top: 11.11vw
+  display: grid
+  grid-template-rows: repeat(4, 1fr)
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: 'a f' 'b b' 'c c' 'd e'
+  grid-row-gap: 2.777vw
+  grid-column-gap: 2.777vw
+  flex-direction: column
+  & button
+    user-select: none
+    &:nth-child(1)
+      grid-area: a
+    &:nth-child(2)
+      grid-area: b
+    &:nth-child(3)
+      grid-area: f
+    &:nth-child(4)
+      grid-area: d
+    &:nth-child(5)
+      grid-area: c
+    &:nth-child(6)
+      grid-area: e
+
+
+
+.buttonsBoxWorkingPage
+  display: grid
+  grid-template-rows: repeat(5, 1fr)
+  grid-template-columns: 1fr
+  grid-template-areas: 'a' 'b' 'c' 'd' 'e'
+  grid-row-gap: 2.777vw
+  grid-column-gap: 2.777vw
+  flex-direction: column
+  & button
+    &:nth-child(1)
+      grid-area: a
+    &:nth-child(2)
+      grid-area: d
+    &:nth-child(3)
+      grid-area: e
+    &:nth-child(4)
+      grid-area: b
+    &:nth-child(5)
+      grid-area: c
+
+.workingPageStyle
+  &:nth-child(1) div:nth-child(1)
+    width: 63.6vw
+  &:nth-child(2) div:nth-child(2)
+    width: 48vw
+  &:nth-child(3) div:nth-child(2)
+    width: 53vw
+  &:nth-child(4) div:nth-child(1)
+    width: 88.3vw
+
+.designPageStyle
+  &:nth-child(2) div:nth-child(2)
+    width: 60vw
+  &:nth-child(3) div:nth-child(2)
+    width: 70vw
+  &:nth-child(6) div:nth-child(2)
+    width: 70vw

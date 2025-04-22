@@ -1,0 +1,230 @@
+@import "src/index"
+.stepsBody
+  margin: 0 5.208vw
+
+
+.stepsTitle
+  margin-bottom: 4.166vw
+  & div
+    display: flex
+
+
+
+.titleBig
+  @include text(3.645vw, white)
+  line-height: 3.46vw
+  flex: 1
+  user-select: none
+
+
+.titleLittle
+  @include text(1.04vw, white)
+  flex: 1
+  user-select: none
+
+
+.stepScrollBox
+  &::-webkit-scrollbar
+    height: 2px
+    background-color: #333333
+  &::-webkit-scrollbar-thumb
+    background-color: $main-green-color
+  padding-bottom: 5.2vw
+  transform: rotateX(180deg)
+  display: flex
+  flex-direction: row
+  overflow-x: scroll
+
+
+
+.workingStep
+  &:not(&:first-child)
+    margin-left: 17.91vw
+  display: flex
+  transform: rotateX(180deg)
+  flex-direction: column
+  &:nth-child(1)
+    & span:nth-child(3)
+      width: 20vw
+  &:nth-child(2)
+    & span:nth-child(3)
+      width: 20vw
+  &:nth-child(3)
+    & span:nth-child(3)
+      width: 22vw
+  &:nth-child(4)
+    & span:nth-child(3)
+      width: 16.7vw
+  &:nth-child(5)
+    & span:nth-child(3)
+      width: 20.8vw
+  &:nth-child(6)
+    & span:nth-child(3)
+      width: 16vw
+  & span:nth-child(1)
+    @include text(1.04vw, white)
+    margin-bottom: 2.6vw
+    user-select: none
+  & span:nth-child(2)
+    @include text(2.86vw, white)
+    margin-bottom: 1.822vw
+    user-select: none
+  & span:nth-child(3)
+    user-select: none
+    @include text(0.9375vw, #B0B0B0)
+    line-height: 1.31vw
+    display: block
+
+.step
+  &:not(&:first-child)
+    margin-left: 17.91vw
+  display: flex
+  transform: rotateX(180deg)
+  flex-direction: column
+  & span:nth-child(1)
+    @include text(1.04vw, white)
+    margin-bottom: 2.6vw
+    user-select: none
+  & span:nth-child(2)
+    @include text(2.86vw, white)
+    margin-bottom: 1.822vw
+    user-select: none
+  & span:nth-child(3)
+    user-select: none
+    @include text(0.9375vw, #B0B0B0)
+    line-height: 1.31vw
+    display: block
+
+.stepAbout
+  &:nth-child(1)
+    min-width: 61vw
+  &:nth-child(2)
+    min-width: 60.5vw
+  &:nth-child(3)
+    min-width: 63vw
+  &:nth-child(4)
+    min-width: 66.9vw
+  display: flex
+  flex-direction: column
+  &:not(&:first-child)
+    margin-left: 13.888vw
+  transform: rotateX(0)
+  & span
+    line-height: 5.444vw
+  & span:nth-child(1)
+    @include text(3.611vw, white)
+    margin-bottom: 6.9444vw
+  & span:nth-child(2)
+    @include text(5.555vw, white)
+    margin-bottom: 4.166vw
+  & span:nth-child(3)
+    @include text(3.888vw, #B0B0B0)
+    display: block
+
+
+@media (max-width: 560px)
+  .stepScrollBox
+    padding-bottom: 13.88vw
+  .stepsBody
+    display: flex
+    flex-direction: column
+    align-content: center
+    background: url("/assets/steps/setpsMobileBack.png")
+    width: 100%
+    margin: 0
+    height: 233.61vw
+    background-size: 100% 100%
+  .stepsTitle
+    margin-top: 55.55vw
+    display: flex
+    & div
+      display: flex
+      flex-direction: column
+      width: 100%
+      margin-bottom: 0
+    width: 100%
+    margin-bottom: 0
+  .titleBig
+    text-align: center
+    @include text(10.55vw, white)
+    line-height: 10vw
+    margin-bottom: 13.888vw
+  .titleLittle
+    text-align: center
+    @include text(3.6111vw, white)
+    margin-bottom: 13.888vw
+  .stepScrollBox
+    padding-bottom: 13.888vw
+    margin-left: 5.555vw
+    margin-right: 5.555vw
+    transform: rotateX(0)
+  .step
+    &:nth-child(1) span:nth-child(3)
+      min-width: 53vw
+    &:nth-child(2) span:nth-child(3)
+      min-width: 60.5vw
+    min-width: 50.55vw
+    justify-content: normal
+    align-items: normal
+    &:not(&:first-child)
+      margin-left: 15vw
+    transform: rotateX(0)
+    &:nth-child(2)
+      margin-right: 4vw
+      & span:nth-child(3)
+        width: 55vw
+    &:nth-child(6)
+      & span:nth-child(3)
+        width: 58vw
+    & span:nth-child(1)
+      @include text(3.611vw, white)
+      margin-bottom: 6.9444vw
+    & span:nth-child(2)
+      @include text(5.555vw, white)
+      margin-bottom: 4.166vw
+    & span:nth-child(3)
+      @include text(3.888vw, #B0B0B0)
+      line-height: 5.44vw
+      display: block
+  .workingStep
+    &:nth-child(1) span:nth-child(3)
+      min-width: 53vw
+    &:nth-child(2) span:nth-child(3)
+      min-width: 60.5vw
+    &:nth-child(3) span:nth-child(3)
+      min-width: 60.5vw
+    &:nth-child(4) span:nth-child(3)
+      min-width: 58vw
+    &:nth-child(5) span:nth-child(3)
+      min-width: 60.5vw
+    min-width: 60vw
+    justify-content: normal
+    align-items: normal
+    &:not(&:first-child)
+      margin-left: 15vw
+    transform: rotateX(0)
+    &:nth-child(2)
+      margin-right: 4vw
+      & span:nth-child(3)
+        width: 55vw
+    &:nth-child(6)
+      & span:nth-child(3)
+        width: 58vw
+    & span:nth-child(1)
+      @include text(3.611vw, white)
+      margin-bottom: 6.9444vw
+    & span:nth-child(2)
+      @include text(5.555vw, white)
+      margin-bottom: 4.166vw
+    & span:nth-child(3)
+      @include text(3.888vw, #B0B0B0)
+      line-height: 5.44vw
+      display: block
+
+.workingBack
+  background: url("/assets/steps/workingStepsBackMobile.png")
+  background-size: 100% 100%
+
+.aboutBack
+  background: url("/assets/steps/stepsMobileAbout.png")
+  background-size: 100% 100%

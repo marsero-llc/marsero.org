@@ -1,0 +1,52 @@
+@import "src/index"
+.switcherBody
+  height: 227.77vw
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+.header
+  margin-top: 16vw
+  display: flex
+  width: 88.88vw
+  justify-content: space-between
+  align-items: center
+
+.marseroImg
+  width: 33.333vw
+  height: 3.6111vw
+  display: block
+
+.closeBtn
+  display: block
+  width: 6.944vw
+  height: 6.944vw
+  outline: none
+  border: none
+  background: transparent
+  position: relative
+  & div
+    position: absolute
+    width: 8vw
+    height: 2px
+    background: rgba(0, 255, 10, 1)
+    &:nth-child(1)
+      transform: rotateZ(45deg)
+    &:nth-child(2)
+      transform: rotateZ(-45deg)
+
+.linkBox
+  display: flex
+  width: 100%
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+
+.link
+  outline: none
+  text-decoration: none
+  @include text(11.11vw, rgba(255, 255, 255, 1))
+  margin-bottom: 8.333vw
+  line-height: 10.55vw

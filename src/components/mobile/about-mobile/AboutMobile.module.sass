@@ -1,0 +1,97 @@
+@import "src/index"
+
+.aboutScreenBody
+  width: 100%
+  height: 194.71vw
+  background: url("/assets/big-photos/aboutMobileBack.png")
+  background-size: 176.94vw 100%
+
+.titleBox
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.titleBig
+  @include text(13.33vw, rgba(255, 255, 255, 1))
+  line-height: 12.66vw
+  margin-bottom: 5.555vw
+  user-select: none
+
+
+.titleLittle
+  @include text(3.888vw, rgba(255, 255, 255, 1))
+  line-height: 5.36vw
+  text-align: center
+  user-select: none
+
+
+
+.linesBox
+  margin: 18.05vw 5.555vw 35.555vw 5.555vw
+  height: 33.3333vw
+  position: relative
+
+.horizLine
+  position: absolute
+  height: 2px
+  top: 0
+  bottom: 0
+  margin: auto
+  width: 100%
+  background: linear-gradient(90deg, rgba(0, 255, 10, 0), rgba(0, 255, 10, 1),rgba(0, 255, 10, 0))
+
+.vertLine
+  position: absolute
+  width: 2px
+  top: 0
+  left: 0
+  right: 0
+  margin: auto
+  height: 100%
+  background: linear-gradient(rgba(0, 255, 10, 0), rgba(0, 255, 10, 1),rgba(0, 255, 10, 0))
+
+
+.dot
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  width: 1.111vw
+  height: 1.111vw
+  border-radius: 0.555vw
+  background: rgba(0, 255, 10, 1)
+
+.linesBoxContent
+  display: grid
+  grid-template-rows: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr)
+  width: 100%
+  height: 100%
+  align-items: center
+  justify-items: center
+
+.linesBoxContent span
+  @include text(3.6111vw, rgba(255, 255, 255, 1))
+  user-select: none
+
+
+.discussBtnBox
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.headerBox
+  padding-top: 17.5vw
+  margin-bottom: 25.833vw
+
+.officialText
+  @include text(3.055vw, rgba(255, 255, 255, 1))
+  margin-top: 14.444vw
+  text-align: center
+  margin-bottom: 6.666vw
+  user-select: none

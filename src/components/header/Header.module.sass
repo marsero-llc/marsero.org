@@ -1,0 +1,86 @@
+@import "src/index"
+
+
+.header
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  padding-top: 1.66vw
+
+
+.imgMarsero
+  width: 11.35vw
+  height: 1.19vw
+  user-select: none
+
+
+.linkBox
+  margin-left: 8.072vw
+  margin-right: 15.729vw
+  display: inline-flex
+  transform: translateY(0.781vw)
+
+
+@mixin MLink
+  &:not(&:first-child)
+    margin-left: 2.343vw
+  text-decoration: none
+  transition: all ease 0.25s
+  &:after
+    content: ''
+    margin-top: 0.781vw
+    display: block
+    height: 2px
+    width: 100%
+    transform: scaleX(0)
+    transition: all ease 0.25s
+    -webkit-transition: all ease 0.25s
+    background-color: $main-green-color
+    user-select: none
+
+
+.link
+  @include text(0.9375vw, $main-gray-color)
+  @include MLink
+  user-select: none
+  &:hover
+    color: $main-green-color
+    &:after
+      transform: scaleX(1)
+
+
+.lightLink
+  @include MLink
+  user-select: none
+  @include text(0.9375vw, $main-green-color)
+  &:after
+    transform: scaleX(1)
+
+
+.phone
+  @include text(0.9375vw, $main-green-color)
+  margin-right: 3.802vw
+
+
+
+.discussButton
+  width: 13.07vw
+  height: 3.1vw
+  background-color: #0000
+  border: 1px $main-green-color solid
+  border-radius: 5.208vw
+  @include text(0.9375vw, $main-green-color)
+  text-align: center
+  offset: none
+  user-select: none
+  transition: background-color ease 0.25s, color ease 0.25s, font-weight 0.01s ease 0.124s, padding-bottom 0.01s ease 0.124s
+  -webkit-transition: background-color ease 0.25s, color ease 0.25s, font-weight 0.01s ease 0.124s, padding-bottom 0.01s ease 0.124s
+  &:hover
+    background: $main-green-color
+    color: black
+    font-weight: 400
+
+
+
+

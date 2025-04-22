@@ -1,0 +1,68 @@
+@import "src/index"
+.footerBody
+  display: flex
+  margin-bottom: 2.6vw
+  width: 100%
+
+
+.leftContent
+  display: flex
+  width: 100%
+  flex-direction: column
+  align-items: flex-start
+  & div
+    padding-left: 5.208vw
+    height: 100%
+    display: flex
+    align-items: end
+    & span
+      user-select: none
+    &:nth-child(1) img
+      user-select: none
+      width: 19.78vw
+      height: 2.08vw
+
+
+
+.officialText
+  @include text(0.572vw, white)
+
+
+.rightContent
+  display: flex
+  width: 100%
+  flex-direction: row
+  & div
+    margin-top: 6.56vw
+    display: flex
+    flex: 1
+    flex-direction: column
+    &:nth-child(3)
+      & span
+        user-select: none
+    & a
+      user-select: none
+      text-decoration: none
+      @include text(0.9375vw, #B0B0B0)
+      margin-bottom: 0.7812vw
+    & span
+      display: block
+      &:not(&:first-child)
+        @include text(0.9375vw, #B0B0B0)
+        margin-bottom: 0.7812vw
+      &:first-child
+        @include text(0.9375vw, white)
+        margin-bottom: 1.302vw
+        user-select: none
+
+
+.link
+  @include text(0.9375vw, #B0B0B0)
+  text-decoration: none
+  user-select: none
+
+.line
+  position: absolute
+  width: 100%
+  height: 2px
+  background: rgba(34, 34, 34, 1)

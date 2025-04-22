@@ -1,0 +1,69 @@
+@import "src/index"
+.footerBody
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin-top: 27.77vw
+  position: relative
+  align-items: center
+
+
+.line
+  position: absolute
+  height: 2px
+  width: 100%
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.15),rgba(167, 167, 167, 1),rgba(255, 255, 255, 0.15))
+  opacity: 50%
+
+.image
+  height: 4.722vw
+  width: 50vw
+  margin-top: 8.33vw
+  margin-bottom: 8.333vw
+  user-select: none
+
+
+.textBox
+  display: flex
+  width: 100%
+  justify-content: space-around
+  & span
+    @include text(3.88vw, rgba(255, 255, 255, 1))
+
+
+.linkBox
+  display: flex
+  width: 100%
+  justify-content: center
+  margin: 6.944vw 0
+  & a
+    width: 8.33vw
+    height: 8.33vw
+    display: block
+    background-repeat: no-repeat
+    &:nth-child(1)
+      background: url("/assets/_Linkedin.svg")
+      background-size: 100% 100%
+    &:nth-child(2)
+      background: url("/assets/_instagram.svg")
+      background-size: 100% 100%
+      margin: 0 5.555vw
+    &:nth-child(3)
+      background: url("/assets/_Telegram.svg")
+      background-size: 100% 100%
+
+
+.officialSpan
+  @include text(2.777vw, rgba(255, 255, 255, 1))
+  user-select: none
+  margin-top: 6.944vw
+  margin-bottom: 6.9444vw
+
+
+.arrowBtn
+  width: 19.444vw
+  height: 19.444vw
+  background: url("/assets/arrowTopBtn.svg")
+  background-size: 100% 100%
+  outline: none
+  border: none
