@@ -1,6 +1,6 @@
-export const phoneNumber: string = "+375(29)111-11-11"
+export const phoneNumber: string = "+375(29)746-00-26"
 export const officialText: string = "© NM / 2023. MINSK / BELARUS"
-export const marseroMail: string = 'marsero@gmail.com'
+export const marseroMail: string = 'info@marsero.org'
 
 export type workType = {
     id: string
@@ -347,6 +347,7 @@ export const techSrcList: string[] = [
 ]
 
 export const infoMail: string = 'info@marsero.org'
+
 
 export type categoryType = {
     btnText: string

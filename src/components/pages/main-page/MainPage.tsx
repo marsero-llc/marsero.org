@@ -63,7 +63,7 @@ const MainPage: FunctionComponent<{isMobile: boolean}> = ({isMobile}) => {
                                 <div style={{margin: '16.66vw 0 17.604vw 0'}}>
                                     <Steps isMobile={isMobile} page={'main-page'}/>
                                 </div>
-                                <KeyDesign setPosition={setPosition} setNowPage={setNowPage} page={'main-page'}/>
+                                {/* <KeyDesign setPosition={setPosition} setNowPage={setNowPage} page={'main-page'}/> */}
                                 <div style={{margin: '17.6vw 0 16.19vw 0'}}>
                                     <MarseroAdvantages page={'main-page'}/>
                                 </div>
