@@ -3,7 +3,6 @@ import MainScreen from "../../main-screen/MainScreen";
 import Services from "../../services/Services";
 import Photo from "../../photo/Photo";
 import Steps from "../../steps/Steps";
-import KeyDesign from "../../key-design/KeyDesign";
 import MarseroAdvantages from "../../marsero-advantages/MarseroAdvantages";
 import Technologies from "../../technologies/Technologies";
 import Ending from "../../ending/Ending";
