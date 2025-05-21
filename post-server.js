@@ -13,14 +13,14 @@ app.post('/send', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'server', // mail, yandex и т.п.
         auth: {
-            user: 'noreply@marsero.org',
-            pass: 'password',
+            user: 'info@marsero.org',
+            pass: 'mmunucqqneltufrh',
         },
     });
 
     const mailOptions = {
-        from: 'noreply@marsero.org',
-        to: 'company@marsero.org', // почта на которую придут заявки
+        from: 'info@marsero.org',
+        to: 'info@marsero.org', // почта на которую придут заявки
         subject: 'Новая заявка с сайта MARSERO',
         text: `Имя: ${name}\nТелефон: ${phone}\nEmail: ${email}`,
     };
