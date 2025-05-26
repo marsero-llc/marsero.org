@@ -11,7 +11,7 @@ app.post('/send', async (req, res) => {
     const { name, phone, email } = req.body;
 
     const transporter = nodemailer.createTransport({
-        service: 'server', // mail, yandex и т.п.
+        host: 'smtp.yandex.ru',
         auth: {
             user: 'info@marsero.org',
             pass: 'mmunucqqneltufrh',
