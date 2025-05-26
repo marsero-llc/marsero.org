@@ -8,6 +8,7 @@ const WorkingPage = lazy( () => import("./components/pages/working-page/WorkingP
 const BrandingPage = lazy( () => import("./components/pages/branding-page/BrandingPage"))
 const WebDesignPage = lazy(() => import("./components/pages/web-design-page/WebDesignPage"))
 const AboutPage = lazy( () => import("./components/pages/about-page/AboutPage"))
+const ThanksPage = lazy( () => import("./components/pages/thanks-page/ThanksPage.tsx"))
 
 const Router: FunctionComponent = () => {
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 560)
@@ -45,6 +46,11 @@ const Router: FunctionComponent = () => {
                     <BrandingPage isMobile={isMobile}/>
             </Suspense>}
                    path={'/branding'}/>
+            <Route element={
+                <Suspense fallback={<Loading/>}>
+                    <ThanksPage isMobile={isMobile}/>
+                </Suspense>}
+                   path={'/thanks'}/>
         </Routes>
     </BrowserRouter>
 }
